@@ -1,0 +1,51 @@
+@font-face {
+	font-family: 'acme';
+	src: url('./fonts/Acme/Acme-Regular.ttf');
+}
+
+@font-face {
+	font-family: 'inconsolata';
+	src: url('./fonts/Inconsolata/Inconsolata-Regular.ttf');
+}
+
+#quizDiv{
+	font-size: 25px;
+	color: #555;
+	margin:0 0 0 50px;
+}
+
+.quizContainer{
+	display:flex;
+	width: 100%;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content:flex-start;
+	margin-top: 10px;
+	padding-top: 10px;
+}
+	
+.quizTitle{
+	margin:0 0 0 50px;
+	font-size: 18px;
+	color: #555;
+}
+
+.button{
+	font-family: inconsolata;
+	font-size: 12px;
+	width: 100px;
+	height: 25px;
+	margin-right:15px;
+
+	text-align: center;
+
+	border: none;
+	border-radius: 5px;
+	box-shadow: 0 0 8px #999;
+
+	background-color: #313131;
+	color: #ffdc5b;
+
+
+
+

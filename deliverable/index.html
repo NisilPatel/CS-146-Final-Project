@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>unitfy</title>
+	<link rel="stylesheet" href="./style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Acme|Inconsolata" rel="stylesheet">
+	<script type="text/javascript" src="./js/bundle.js"></script>
+	<script type="text/javascript" src="./js/converting.js"></script>
+	
+	<!-- JUST FOR ONE ANIMATION -->
+	<script type="text/javascript" src="./js/jquery.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="title">unitfy</div>
+		<div class="subtitle">the premier unit conversion tool</div>
+		<hr>
+		<div class="conversions">
+			<form>
+				<div class="convert-container">
+					<h3>Convert:</h3>
+					<input class="convert-box" type="text" value="mi to ft"></input>
+				</div>
+				<br>
+				<div class="convert-container">
+					<input class="convert-box convert-to-box" type="text" readonly></input>
+				</div>
+			</form>
+		</div>
+		<br>
+		<br>
+		<br>
+		<div class="examples">
+			<p>Examples:</p>
+			<ul>
+				<li>ft to mi</li>
+				<li>10 m/s to ft/s</li>
+				<li>30 GB to MB</li>
+			</ul>
+		</div>
+		<br>
+		<br>
+		<br>
+		<div id="unitlist">
+			<h3 id="showbutton"><a href="#" id="supported-units-show">List of Supported Units</a></h3>
+			<div id="supported-units" hidden>
+				<h3>Length</h3>
+				<ul>
+				<li>mm</li>
+				<li>cm</li>
+				<li>m</li>
+				<li>in</li>
+				<li>ft-us</li>
+				<li>ft</li>
+				<li>mi</li>
+				</ul>
+				<h3>Mass</h3>
+				<ul>
+				<li>mcg</li>
+				<li>mg</li>
+				<li>g</li>
+				<li>kg</li>
+				<li>oz</li>
+				<li>lb</li>
+				<li>mt</li>
+				<li>t</li>
+				</ul>
+				<h3>Temperature</h3>
+				<ul>
+				<li>C</li>
+				<li>F</li>
+				<li>K</li>
+				<li>R</li>
+				</ul>
+				<h3>Time</h3>
+				<ul>
+				<li>ns</li>
+				<li>mu</li>
+				<li>ms</li>
+				<li>s</li>
+				<li>min</li>
+				<li>h</li>
+				<li>d</li>
+				<li>week</li>
+				<li>month</li>
+				<li>year</li>
+				</ul>
+				<h3>Frequency</h3>
+				<ul>
+				<li>Hz</li>
+				<li>mHz</li>
+				<li>kHz</li>
+				<li>MHz</li>
+				<li>GHz</li>
+				<li>THz</li>
+				<li>rpm</li>
+				<li>deg/s</li>
+				<li>rad/s</li>
+				</ul>
+				<h3>Speed</h3>
+				<ul>
+				<li>m/s</li>
+				<li>km/h</li>
+				<li>m/h</li>
+				<li>knot</li>
+				<li>ft/s</li>
+				</ul>
+				<h3>Pace</h3>
+				<ul>
+				<li>s/m</li>
+				<li>min/km</li>
+				<li>s/ft</li>
+				<li>min/km</li>
+				</ul>
+				<h3>Pressure</h3>
+				<ul>
+				<li>Pa</li>
+				<li>hPa</li>
+				<li>kPa</li>
+				<li>MPa</li>
+				<li>bar</li>
+				<li>torr</li>
+				<li>psi</li>
+				<li>ksi</li>
+				</ul>
+				<h3>Digital Storage</h3>
+				<ul>
+				<li>b</li>
+				<li>Kb</li>
+				<li>Mb</li>
+				<li>Gb</li>
+				<li>Tb</li>
+				<li>B</li>
+				<li>KB</li>
+				<li>MB</li>
+				<li>GB</li>
+				<li>TB</li>
+				</ul>
+				<h3>Parts Per</h3>
+				<ul>
+				<li>ppm</li>
+				<li>ppb</li>
+				<li>ppt</li>
+				<li>ppq</li>
+				</ul>
+				<h3>Voltage</h3>
+				<ul>
+				<li>V</li>
+				<li>mV</li>
+				<li>kV</li>
+				</ul>
+				<h3>Current</h3>
+				<ul>
+				<li>A</li>
+				<li>mA</li>
+				<li>kA</li>
+				</ul>
+				<h3>Power</h3>
+				<ul>
+				<li>W</li>
+				<li>mW</li>
+				<li>kW</li>
+				<li>MW</li>
+				<li>GW</li>
+				</ul>
+				<h3>Energy</h3>
+				<ul>
+				<li>Wh</li>
+				<li>mWh</li>
+				<li>kWh</li>
+				<li>MWh</li>
+				<li>GWh</li>
+				<li>J</li>
+				<li>kJ</li>
+				</ul>
+				<h3>Angle</h3>
+				<ul>
+				<li>deg</li>
+				<li>rad</li>
+				<li>grad</li>
+				<li>arcmin</li>
+				<li>arcsec</li>
+				</ul>
+				<h3>Charge</h3>
+				<ul>
+				<li>c</li>
+				<li>mC</li>
+				</ul>
+				<h3>Force</h3>
+				<ul>
+				<li>N</li>
+				<li>kN</li>
+				</ul>
+			</div>
+		</div>
+		<div class="footer">
+			<hr>
+			<a href="./about.html">ABOUT US</a>
+			<span class="dedications">DEDICATED TO HERC</span>
+			<a href="./quiz.html">QUIZ</a>
+		</div>
+	</div>
+</body>
+</html>

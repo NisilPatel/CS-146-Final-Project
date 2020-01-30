@@ -1,0 +1,52 @@
+.team-container {
+	display:flex;
+	width: 100%;
+	flex-direction: row;
+	flex-flow: row wrap;
+	justify-content: space-around;
+}
+
+.teammember {
+	text-align: center;
+	width: 200px;
+	margin: 20px;
+}
+
+h3 {
+	text-align: center;
+}
+
+/*
+	MOBILE
+*/
+@media (max-width:449px) {
+	.teammember {
+	}
+}
+
+/*
+	TABLET
+*/
+@media (min-width: 450px) and (max-width: 1079px) {
+	.teammember {
+		width: 350px;
+	}
+
+	.teammember > h3 {
+		font-size: 30px;
+	}
+
+	.teammember > p {
+		font-size: 25px;
+	}
+}
+
+
+/*
+	DESKTOP
+*/
+@media (min-width:1080px) {
+	.teammember {
+
+	}
+}

@@ -1,0 +1,175 @@
+@font-face {
+	font-family: 'acme';
+	src: url('./fonts/Acme/Acme-Regular.ttf');
+}
+
+@font-face {
+	font-family: 'inconsolata';
+	src: url('./fonts/Inconsolata/Inconsolata-Regular.ttf');
+}
+
+body {
+	margin: 0;
+}
+
+.container {
+	min-height: 100vh;
+
+	background-color: white;
+
+	font-family: 'acme';
+	text-transform: uppercase;
+
+	margin: 0 auto;
+	display: flex;
+
+	flex-direction: column;
+	align-items: center;
+}
+
+.title {
+	font-size: 100px;
+}
+
+.subtitle {
+	margin-top:-10px;
+	font-size: 18px;
+	color: #555;
+}
+
+.footer {
+	font-family: acme;
+}
+
+.dedications {
+	margin-left: 10px;
+	font-style:italic;
+	color: #888;
+	margin-right: 10px;
+}
+
+hr {
+	border-top: 1px solid #ccc;
+	width:90%;
+}
+
+.conversions {
+	margin-top: 30px;
+	padding-top: 30px;
+	display: flex;
+	justify-content: space-around;
+}
+
+.convert-box {
+	font-family: inconsolata;
+	font-size: 25px;
+
+	width: 400px;
+	height: 100px;
+
+	text-align: center;
+
+	border: none;
+	border-radius: 5px;
+	box-shadow: 0 0 8px #999;
+
+	background-color: #313131;
+	color: #ffdc5b;
+}
+
+.convert-to-box {
+	background-color: #c9e9df;
+	color: #2f3e2d;
+}
+
+.convert-box:hover, .convert-box:focus {
+	box-shadow: 0 0 16px #000;
+}
+
+.convert-to-box:hover, .convert-to-box:focus {
+	box-shadow: 0 0 16px #555;
+}
+
+.convert-container {
+	text-align: center;
+}
+
+#supported-units {
+	font-family: 'inconsolata';
+	text-transform:none;
+}
+
+.examples {
+	opacity: .6;
+}
+
+.footer {
+	margin-top:auto;
+	bottom: 10px;
+	width: 100%;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom:20px;
+}
+
+/*
+	MOBILE
+*/
+@media (max-width:449px) {
+	.container {
+		width: 100%;
+	}
+
+	.convert-container {
+		width:100%;
+	}
+
+	.conversions {
+		width: 100%;
+		flex-direction: column;
+	}
+
+	.convert-box {
+		height: 60px;
+	}
+
+	.title {
+		font-size: 70px;
+	}
+	.subtitle {
+		font-size: 13px;
+	}
+}
+
+/*
+	TABLET
+*/
+@media (min-width: 450px) and (max-width: 1079px) {
+	.container {
+		width: 100%;
+	}
+
+	.conversions {
+		width: 85%;
+		flex-direction: column;
+	}
+}
+
+
+/*
+	DESKTOP
+*/
+@media (min-width:1080px) {
+	body {
+		background: repeating-linear-gradient( 45deg, #bbd, #bbd 10px, #ccf 10px, #ccf 20px );
+	}
+	.container {
+		width: 600px;
+		box-shadow: 0 0 60px #666;
+	}
+
+	.conversions {
+		width: 600px;
+		flex-direction: column;
+	}
+}
